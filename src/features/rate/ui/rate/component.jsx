@@ -1,7 +1,7 @@
 export const Rate = ( {value} ) => {
-    return (
+  return (
       <div>
-         {value}
+      {value}
       </div>
-    )
-  }
+)
+}
