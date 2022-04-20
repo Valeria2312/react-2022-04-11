@@ -8,7 +8,6 @@ export const Restaurant = ({ restaurant }) => {
     restaurant.reviews.reduce((prev, curr) => prev + curr.rating, 0) /
       restaurant.reviews.length
   );
-  
 
   return (
     <div>

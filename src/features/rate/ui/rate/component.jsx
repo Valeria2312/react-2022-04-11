@@ -1,3 +1,4 @@
+
 import Star from './img/star.svg';
 import styles from './styles.module.scss';
 
@@ -16,3 +17,4 @@ return (
       <span>{getStarsRate(value)}</span>
   </div>
 )};
+
