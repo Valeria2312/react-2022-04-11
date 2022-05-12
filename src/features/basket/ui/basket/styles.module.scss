@@ -2,4 +2,48 @@
   padding: 20px;
   border: 1px solid black;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.products {
+  margin-top: 20px;
+  margin-bottom: auto;
+  width: 100%;
+}
+
+.product:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.clearAction {
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 4px;
+  height: 30px;
+  transition: 0.2s;
+
+  &:first-child {
+    margin-right: 10px;
+  }
+
+  &:last-child {
+    margin-left: 10px;
+  }
+
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
 }

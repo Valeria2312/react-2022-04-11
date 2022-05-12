@@ -3,9 +3,8 @@ import { Menu } from "../../../menu/ui/menu/component";
 import { Rate } from "../../../rate/ui/rate/component";
 import { Reviews } from "../../../review/ui/reviews/component";
 import { NewReview } from "../../../review/ui/new-review/component";
-
 import styles from "./styles.module.scss";
-import { Basket } from "../../../basket/ui/basket/component";
+import { BasketContainer } from "../../../basket/ui/basket/container";
 
 export const Restaurant = ({ restaurant }) => {
   const restaurantRate = useMemo(
@@ -29,7 +28,7 @@ export const Restaurant = ({ restaurant }) => {
           <Reviews reviews={restaurant.reviews} />
           <NewReview />
         </div>
-        <Basket className={styles.basket} />
+        <BasketContainer className={styles.basket} />
       </div>
     </div>
   );
