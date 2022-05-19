@@ -30,3 +30,11 @@ export const selectRestaurantIds = createSelector(
 
 export const selectIsRestaurantsLoading = (state) =>
   selectRestaurantModuleState(state).isLoading;
+
+export const selectRestaurantReviewIds = (state, restaurantId) => {
+  return selectRestaurantById(state, { restaurantId }).reviews;
+};
+
+export const selectRestaurantProductIds = (state, restaurantId) => {
+  return selectRestaurantById(state, { restaurantId }).menu;
+};
